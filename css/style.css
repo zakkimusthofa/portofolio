@@ -21,7 +21,7 @@
 
 
 
-.body {
+body {
     background-image: url(../image/dark-robot.jpg);
     /* background-color: black; */
     background-size: cover;
@@ -29,9 +29,13 @@
     background-attachment: fixed;
     background-position: center;
     object-position: center 50%;
-    color: aliceblue;
     font-family: Arial, sans-serif;
     height: 100vh;
+}
+
+.body {
+    color: aliceblue;
+
 }
 
 h2 {
