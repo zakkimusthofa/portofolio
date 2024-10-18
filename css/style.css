@@ -23,7 +23,6 @@
 
 .body {
     background-image: url(../image/dark-robot.jpg);
-    /* background-color: black; */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
