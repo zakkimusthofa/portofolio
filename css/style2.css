@@ -1,0 +1,248 @@
+/* Global Variables */
+:root {
+  --primary-color: #1a1a2e;
+  --secondary-color: #16213e;
+  --highlight-color: #0f3460;
+  --accent-color: #e94560;
+  --text-color: #ffffff;
+  --muted-text-color: #bdbdbd;
+  --button-hover: #1f4068;
+  --card-shadow: rgba(0, 0, 0, 0.5);
+}
+
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+/* Navbar */
+#navbar {
+  background-color: var(--secondary-color);
+  padding: 0.5rem 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#navbar a {
+  color: var(--text-color);
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+#navbar a:hover {
+  color: var(--accent-color);
+}
+
+/* Hero Section */
+.hai {
+  text-align: center;
+  margin: 5rem 0;
+}
+
+.hai h1 {
+  font-size: 3rem;
+  color: var(--accent-color);
+}
+/* Styling untuk container imageME */
+.imageME {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem auto;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Styling untuk gambar dalam imageME */
+.imageME img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--card-shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.imageME img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px var(--card-shadow);
+}
+
+/* About Section */
+#about {
+  padding: 4rem 2rem;
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  margin: 2rem auto;
+  width: 80%;
+  box-shadow: 0 6px 15px var(--card-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+#about h2 {
+  color: var(--accent-color);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+#about p {
+  text-align: justify;
+  color: var(--muted-text-color);
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+#about:before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, var(--highlight-color), transparent);
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* Projects Section */
+#projects {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#projects h2 {
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+#projects .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#projects .card-body {
+  background-color: var(--highlight-color);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--card-shadow);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#projects .card-body:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px var(--card-shadow);
+}
+
+#projects .card-body img {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+}
+
+#projects a {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+#projects a:hover {
+  background-color: var(--button-hover);
+  transform: scale(1.1);
+}
+
+/* Social Media Section */
+.sosmed {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.sosmed h1 {
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+.sosmed .logos {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.sosmed .logos a img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.sosmed .logos a img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px var(--card-shadow);
+}
+
+/* Contact Section */
+#contacts {
+  padding: 4rem 2rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+#contacts h2 {
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+#contacts .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+#contacts .contact {
+  background-color: var(--highlight-color);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--card-shadow);
+  text-align: center;
+}
+
+#contacts .contact img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+#contacts .contact p {
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  background-color: var(--secondary-color);
+  text-align: center;
+  color: var(--muted-text-color);
+  border-top: 2px solid var(--highlight-color);
+}
