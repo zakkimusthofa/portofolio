@@ -73,7 +73,6 @@ body {
 
 section .imageME {
   text-align: center;
-  margin-top: 8rem;
   padding: 8rem 7% 1.4rem;
   width: 60rem;
   margin: auto;
@@ -102,7 +101,6 @@ section .imageME {
 }
 
 #about .content {
-  margin-top: 5rem;
   text-align: center;
 }
 
@@ -260,6 +258,14 @@ section .dots2 {
   border-radius: 50%;
 }
 
+.sosmed div {
+  text-align: center;
+}
+.sosmed div p {
+  color: #fff;
+  align-items: center;
+}
+
 #contacts {
   color: #fff;
   text-align: center;
@@ -295,4 +301,5 @@ section .dots2 {
 
 footer {
   margin-top: 8rem;
+  color: #fff;
 }
