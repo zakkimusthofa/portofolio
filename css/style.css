@@ -2,10 +2,19 @@
   --ungu: #d900ff;
   --polis: rgba(250, 234, 249, 0.2);
   --border: rgba(255, 0, 247, 0.8);
+<<<<<<< HEAD
+=======
+  --font: rgb(255, 240, 240);
+>>>>>>> 3838b6da2708dc870ff9acebd9de73b152d676d3
 }
 
 html {
   scroll-behavior: smooth;
+<<<<<<< HEAD
+=======
+  margin: 0;
+  padding: 0;
+>>>>>>> 3838b6da2708dc870ff9acebd9de73b152d676d3
 }
 
 /* active */
@@ -36,6 +45,7 @@ section .dots2.active {
 
 body {
   background-image: url(../image/dark-robot.jpg);
+<<<<<<< HEAD
   /* background-color: black; */
   background-size: cover;
   background-repeat: no-repeat;
@@ -58,11 +68,21 @@ h2 {
   margin-bottom: 20px;
 }
 
+=======
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+>>>>>>> 3838b6da2708dc870ff9acebd9de73b152d676d3
 #navbar {
   margin-top: 0;
   background-color: rgba(0, 0, 0, 0.8);
   border-bottom: solid var(--ungu) 2px;
   position: fixed;
+<<<<<<< HEAD
   z-index: 9999;
 }
 
@@ -251,4 +271,515 @@ section .dots2 {
 
 footer {
   margin-top: 8rem;
+=======
+}
+
+#navbar a {
+  color: var(--font);
+  margin-left: 0.7rem;
+}
+
+#navbar a:hover {
+  background-color: var(--polis);
+  border-bottom: solid var(--primary) 1px;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.hai {
+  margin-top: 8rem;
+  text-align: center;
+  color: var(--font);
+}
+
+section .imageME {
+  text-align: center;
+  padding: 8rem 7% 1.4rem;
+  width: 60rem;
+  margin: auto;
+}
+
+.profile {
+  object-fit: cover;
+  text-align: center;
+  object-position: center;
+  background-color: var(--polis);
+  width: 22rem;
+  height: 22rem;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+#about {
+  text-align: center;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center; /* Menyelaraskan secara vertikal */
+  width: 50rem;
+  color: #fff;
+}
+
+#about .content {
+  text-align: center;
+}
+
+/* .experience {
+  display: flex;
+  width: 50rem;
+  margin: auto;
+  background-color: var(--polis);
+  gap: 16px; 
+  padding: 1px;
+  text-align: center;
+  color: #fff;
+} */
+
+.experience {
+  display: flex;
+  justify-content: center; /* Pusatkan konten secara horizontal */
+  align-items: center; /* Pusatkan konten secara vertikal */
+  flex-wrap: wrap; /* Agar konten bisa pindah ke baris baru */
+  width: 100%;
+  background-color: var(--polis); /* Gunakan warna latar */
+  gap: 16px; /* Beri jarak antar elemen */
+  padding: 2rem; /* Tambahkan ruang di sekitar konten */
+  border-radius: 12px; /* Tambahkan efek sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+  color: #ffffff; /* Warna teks terang untuk kontras */
+}
+
+.experience .img img:hover {
+  transform: scale(1.05); /* Perbesar sedikit gambar */
+  transition: transform 0.3s ease; /* Animasi smooth */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+.experience .img {
+  justify-content: center;
+}
+.experience .img img {
+  max-width: 100%;
+  max-height: 300px; /* Membatasi tinggi gambar */
+  object-fit: contain; /* Menjaga proporsi gambar tanpa memotong */
+  border-radius: 8px; /* Opsional: Membuat sudut gambar sedikit membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opsional: Memberikan bayangan */
+  margin: 1rem;
+}
+
+.text {
+  margin-top: 10rem;
+  width: 60rem;
+  color: #fff;
+  margin: auto;
+}
+
+.skill {
+  background-color: var(--polis);
+  border-radius: 50px;
+  height: 40rem;
+  width: 40rem;
+  margin-left: 5rem;
+  margin-top: 20rem;
+  text-align: center;
+  margin: auto;
+}
+
+.skill img {
+  width: 8rem;
+  height: 8rem;
+  margin: 2rem;
+  border-radius: 5px;
+}
+
+section #projects {
+  text-align: center;
+  margin-top: 8rem;
+  padding: 8rem 7% 1.4rem;
+  color: #fff;
+}
+
+section #projects #row {
+  justify-content: center;
+  display: flex;
+}
+
+section #projects #row div {
+  margin: 2rem;
+  background-color: var(--polis);
+  padding: 1rem;
+  border-radius: 50px;
+}
+
+section #projects #row div img {
+  width: 20rem;
+  border-radius: 50px;
+}
+
+section #projects #row div a {
+  background-color: var(--ungu);
+  color: #fff;
+  padding: 1rem;
+  border-radius: 50px;
+  font-weight: 700;
+}
+
+section #projects #row div a:hover {
+  text-decoration: none;
+  background-color: var(--border);
+  padding: 1.2rem;
+}
+
+section #projects #row div div {
+  width: 20rem;
+}
+
+section .next {
+  display: none;
+}
+
+section .nextt {
+  display: none;
+}
+
+section .nexttt {
+  display: none;
+}
+
+section .dots {
+  color: var(--ungu);
+}
+
+section .dots1 {
+  color: var(--ungu);
+}
+
+section .dots2 {
+  color: var(--ungu);
+}
+
+.sosmed #sosmed {
+  color: #fff;
+  text-align: center;
+  margin-top: 8rem;
+  padding: 8rem 7% 1.4rem;
+}
+
+.sosmed .logos {
+  margin-top: 3rem;
+  justify-content: center;
+  display: flex;
+}
+
+.sosmed .logos a img {
+  margin: 1rem;
+  padding: 1.1rem;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+.sosmed .logos a img:hover {
+  background-color: var(--polis);
+  padding: 1rem;
+}
+.sosmed div {
+  text-align: center;
+}
+.sosmed div p {
+  color: #fff;
+  align-items: center;
+}
+
+#contacts {
+  color: #fff;
+  text-align: center;
+  margin-top: 8rem;
+  padding: 8rem 7% 1.4rem;
+}
+
+#contacts div {
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  justify-content: center;
+}
+
+#contacts div .contact {
+  background-color: var(--polis);
+  margin-right: 2rem;
+  border-radius: 50px;
+}
+
+#contacts div .contact img {
+  padding: 1rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+#contacts div .contact p {
+  margin: 1rem;
+  font-size: 2rem;
+  color: var(--ungu);
+}
+
+footer {
+  margin-top: 8rem;
+  color: #fff;
+}
+
+@media screen and (max-width: 600px) {
+  #navbar {
+    padding: 0.5rem;
+  }
+
+  #navbar {
+    margin-top: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-bottom: solid var(--ungu) 2px;
+    position: fixed;
+  }
+
+  #navbar a {
+    color: var(--font);
+    margin-left: 0.7rem;
+  }
+
+  #navbar a:hover {
+    background-color: var(--polis);
+    border-bottom: solid var(--primary) 1px;
+    padding: 0.5rem;
+    border-radius: 5px;
+  }
+
+  .hai {
+    margin-top: 8rem;
+    text-align: center;
+    color: var(--font);
+  }
+
+  section .imageME {
+    text-align: center;
+    padding: 8rem 7% 1.4rem;
+    width: 60rem;
+    margin: auto;
+  }
+
+  .profile {
+    object-fit: cover;
+    text-align: center;
+    object-position: center;
+    background-color: var(--polis);
+    width: 22rem;
+    height: 22rem;
+    padding: 2rem;
+    border-radius: 50%;
+  }
+
+  #about {
+    text-align: center;
+    position: relative;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-around;
+    align-items: center; /* Menyelaraskan secara vertikal */
+    width: 50rem;
+    color: #fff;
+  }
+
+  #about .content {
+    text-align: center;
+  }
+
+  .experience {
+    display: flex;
+    justify-content: center; /* Pusatkan konten secara horizontal */
+    align-items: center; /* Pusatkan konten secara vertikal */
+    flex-wrap: wrap; /* Agar konten bisa pindah ke baris baru */
+    width: 100%;
+    background-color: var(--polis); /* Gunakan warna latar */
+    gap: 16px; /* Beri jarak antar elemen */
+    padding: 2rem; /* Tambahkan ruang di sekitar konten */
+    border-radius: 12px; /* Tambahkan efek sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+    color: #ffffff; /* Warna teks terang untuk kontras */
+  }
+
+  .experience .img img:hover {
+    transform: scale(1.05); /* Perbesar sedikit gambar */
+    transition: transform 0.3s ease; /* Animasi smooth */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+  }
+
+  .experience .img {
+    justify-content: center;
+  }
+  .experience .img img {
+    max-width: 100%;
+    max-height: 300px; /* Membatasi tinggi gambar */
+    object-fit: contain; /* Menjaga proporsi gambar tanpa memotong */
+    border-radius: 8px; /* Opsional: Membuat sudut gambar sedikit membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opsional: Memberikan bayangan */
+    margin: 1rem;
+  }
+
+  .text {
+    margin-top: 10rem;
+    width: 60rem;
+    color: #fff;
+    margin: auto;
+  }
+
+  .skill {
+    background-color: var(--polis);
+    border-radius: 50px;
+    height: 40rem;
+    width: 40rem;
+    margin-left: 5rem;
+    margin-top: 20rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  .skill img {
+    width: 8rem;
+    height: 8rem;
+    margin: 2rem;
+    border-radius: 5px;
+  }
+
+  section #projects {
+    text-align: center;
+    margin-top: 8rem;
+    padding: 8rem 7% 1.4rem;
+    color: #fff;
+  }
+
+  section #projects #row {
+    justify-content: center;
+    display: flex;
+  }
+
+  section #projects #row div {
+    margin: 2rem;
+    background-color: var(--polis);
+    padding: 1rem;
+    border-radius: 50px;
+  }
+
+  section #projects #row div img {
+    width: 20rem;
+    border-radius: 50px;
+  }
+
+  section #projects #row div a {
+    background-color: var(--ungu);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 50px;
+    font-weight: 700;
+  }
+
+  section #projects #row div a:hover {
+    text-decoration: none;
+    background-color: var(--border);
+    padding: 1.2rem;
+  }
+
+  section #projects #row div div {
+    width: 20rem;
+  }
+
+  section .next {
+    display: none;
+  }
+
+  section .nextt {
+    display: none;
+  }
+
+  section .nexttt {
+    display: none;
+  }
+
+  section .dots {
+    color: var(--ungu);
+  }
+
+  section .dots1 {
+    color: var(--ungu);
+  }
+
+  section .dots2 {
+    color: var(--ungu);
+  }
+
+  .sosmed #sosmed {
+    color: #fff;
+    text-align: center;
+    margin-top: 8rem;
+    padding: 8rem 7% 1.4rem;
+  }
+
+  .sosmed .logos {
+    margin-top: 3rem;
+    justify-content: center;
+    display: flex;
+  }
+
+  .sosmed .logos a img {
+    margin: 1rem;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+
+  .sosmed div {
+    text-align: center;
+  }
+  .sosmed div p {
+    color: #fff;
+    align-items: center;
+  }
+
+  #contacts {
+    color: #fff;
+    text-align: center;
+    margin-top: 8rem;
+    padding: 8rem 7% 1.4rem;
+  }
+
+  #contacts div {
+    display: flex;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    justify-content: center;
+  }
+
+  #contacts div .contact {
+    background-color: var(--polis);
+    margin-right: 2rem;
+    border-radius: 50px;
+  }
+
+  #contacts div .contact img {
+    padding: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+  }
+
+  #contacts div .contact p {
+    margin: 1rem;
+    font-size: 2rem;
+    color: var(--ungu);
+  }
+
+  footer {
+    margin-top: 8rem;
+    color: #fff;
+  }
+>>>>>>> 3838b6da2708dc870ff9acebd9de73b152d676d3
 }
