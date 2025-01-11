@@ -2,10 +2,13 @@
   --ungu: #d900ff;
   --polis: rgba(250, 234, 249, 0.2);
   --border: rgba(255, 0, 247, 0.8);
+  --font: rgb(255, 240, 240);
 }
 
 html {
   scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
 }
 
 /* active */
@@ -36,26 +39,11 @@ section .dots2.active {
 
 body {
   background-image: url(../image/dark-robot.jpg);
-  /* background-color: black; */
   background-size: cover;
-  background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  object-position: center 50%;
-  font-family: Arial, sans-serif;
-  height: 100vh;
-}
-
-.body {
-  color: aliceblue;
-}
-
-h2 {
-  margin-bottom: 30px;
-}
-
-.card {
-  margin-bottom: 20px;
+  font-family: sans-serif;
+  height: 100%;
 }
 
 #navbar {
@@ -63,11 +51,10 @@ h2 {
   background-color: rgba(0, 0, 0, 0.8);
   border-bottom: solid var(--ungu) 2px;
   position: fixed;
-  z-index: 9999;
 }
 
 #navbar a {
-  color: rgb(255, 240, 240);
+  color: var(--font);
   margin-left: 0.7rem;
 }
 
@@ -81,22 +68,90 @@ h2 {
 .hai {
   margin-top: 8rem;
   text-align: center;
+  color: var(--font);
 }
 
-.container-image {
-  display: grid;
+section .imageME {
+  text-align: center;
+  padding: 8rem 7% 1.4rem;
+  width: 60rem;
+  margin: auto;
+}
+
+.profile {
+  object-fit: cover;
+  text-align: center;
+  object-position: center;
+  background-color: var(--polis);
+  width: 22rem;
+  height: 22rem;
+  padding: 2rem;
+  border-radius: 50%;
+}
+
+#about {
+  text-align: center;
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  align-items: center; /* Menyelaraskan secara vertikal */
+  width: 50rem;
+  color: #fff;
+}
+
+#about .content {
+  text-align: center;
+}
+
+.experience {
+  display: flex;
+  justify-content: center; /* Pusatkan konten secara horizontal */
+  align-items: center; /* Pusatkan konten secara vertikal */
+  flex-wrap: wrap; /* Agar konten bisa pindah ke baris baru */
+  width: 100%;
+  background-color: var(--polis); /* Gunakan warna latar */
+  gap: 16px; /* Beri jarak antar elemen */
+  padding: 2rem; /* Tambahkan ruang di sekitar konten */
+  border-radius: 12px; /* Tambahkan efek sudut membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan */
+  color: #ffffff; /* Warna teks terang untuk kontras */
+}
+
+.experience .img img:hover {
+  transform: scale(1.05); /* Perbesar sedikit gambar */
+  transition: transform 0.3s ease; /* Animasi smooth */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan */
+}
+
+.experience .img {
+  justify-content: center;
+}
+.experience .img img {
+  max-width: 100%;
+  max-height: 300px; /* Membatasi tinggi gambar */
+  object-fit: contain; /* Menjaga proporsi gambar tanpa memotong */
+  border-radius: 8px; /* Opsional: Membuat sudut gambar sedikit membulat */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Opsional: Memberikan bayangan */
+  margin: 1rem;
+}
+
+.text {
+  margin-top: 10rem;
+  width: 60rem;
+  color: #fff;
+  margin: auto;
 }
 
 .skill {
   background-color: var(--polis);
   border-radius: 50px;
-  height: 50rem;
   width: 40rem;
+  height: 48rem;
   margin-left: 5rem;
-  margin-top: 30rem;
-  position: relative;
+  margin-top: 20rem;
   text-align: center;
-  color: aliceblue;
+  margin: auto;
 }
 
 .skill img {
@@ -106,37 +161,11 @@ h2 {
   border-radius: 5px;
 }
 
-.imageME {
-  border-radius: 50rem 50rem 50rem 50rem;
-  position: absolute;
-  text-align: center;
-  background-color: var(--polis);
-  height: 50rem;
-  width: 25rem;
-  margin-top: 5rem;
-  margin-left: 50rem;
-  position: absolute;
-}
-
-.imageME img {
-  margin-top: 2.5rem;
-  text-align: center;
-  object-fit: cover;
-  object-position: center 30%;
-  background-color: #fff;
-  width: 20rem;
-  height: 20rem;
-  border-radius: 50%;
-}
-
-#about {
-  margin-top: 3rem;
-}
-
 section #projects {
   text-align: center;
   margin-top: 8rem;
   padding: 8rem 7% 1.4rem;
+  color: #fff;
 }
 
 section #projects #row {
@@ -199,6 +228,7 @@ section .dots2 {
 }
 
 .sosmed #sosmed {
+  color: #fff;
   text-align: center;
   margin-top: 8rem;
   padding: 8rem 7% 1.4rem;
@@ -217,7 +247,16 @@ section .dots2 {
   border-radius: 50%;
 }
 
+.sosmed div {
+  text-align: center;
+}
+.sosmed div p {
+  color: #fff;
+  align-items: center;
+}
+
 #contacts {
+  color: #fff;
   text-align: center;
   margin-top: 8rem;
   padding: 8rem 7% 1.4rem;
@@ -251,4 +290,5 @@ section .dots2 {
 
 footer {
   margin-top: 8rem;
+  color: #fff;
 }
